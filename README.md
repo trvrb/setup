@@ -1,25 +1,33 @@
 # Reproducible system setup
 
-Install everything with:
+## Command line tools
+
+Install command line tools (includes git) with:
+
+```
+xcode-select --install
+```
+
+## Initial setup
+
+Install dotfiles and OS X defaults with:
 
 ```
 source setup.sh
 ```
 
-## dotfiles
+## Install Homebrew
 
-To update, `cd` into `setup` repository and then run:
-
-```
-ruby dotfiles/bootstrap.rb
-```
-
-This will symlink all the dotfiles in the src directory to the home directory.
-
-## OS X defaults
-
-To set OS X defaults, run:
+Install Homebrew with:
 
 ```
-source defaults/osx.sh
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+```
+
+## Install Homebrew packages
+
+Install all packages in [`Brewfile`](Brewfile) with:
+
+```
+brew bundle Brewfile
 ```
