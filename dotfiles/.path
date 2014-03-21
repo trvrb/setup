@@ -1,0 +1,6 @@
+# Path for BEAGLE install
+#export LD_LIBRARY_PATH=$HOME/lib:$LD_LIBRARY_PATH
+
+# Path for CUDA install
+export PATH=/Developer/NVIDIA/CUDA-5.5/bin:$PATH
+export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-5.5/lib:$DYLD_LIBRARY_PATH
