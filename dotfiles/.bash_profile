@@ -31,8 +31,8 @@ which grunt > /dev/null && eval "$(grunt --completion=bash)"
 # wrap git with hub
 #eval "$(hub alias -s)"
 
-# Load rbenv
-#export RBENV_ROOT="$(brew --prefix rbenv)"
-#export GEM_HOME="$(brew --prefix)/opt/gems"
-#export GEM_PATH="$(brew --prefix)/opt/gems"
+# Load rbenv and set gem paths
+export RBENV_ROOT="$(brew --prefix rbenv)"
+export GEM_HOME="$(brew --prefix)/opt/gems"
+export GEM_PATH="$(brew --prefix)/opt/gems"
 eval "$(rbenv init -)"
