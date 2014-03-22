@@ -1,33 +1,46 @@
 # Reproducible system setup
 
-## Command line tools
+## Install command line tools
 
 Install command line tools (includes git) with:
 
-```
-xcode-select --install
-```
+    xcode-select --install
 
-## Initial setup
+## Setup
 
-Install dotfiles and OS X defaults with:
+Do all the following with:
 
-```
-source setup.sh
-```
+    source setup.sh
 
-## Install Homebrew
+### Link dotfiles
+
+Link dotfiles with:
+
+    ruby dotfiles/symlink.rb
+
+### Install Homebrew
 
 Install Homebrew with:
 
-```
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-```
+    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
-## Install Homebrew packages
+### Install Homebrew packages
 
 Install all packages in [`Brewfile`](Brewfile) with:
 
-```
-brew bundle Brewfile
-```
+    brew bundle Brewfile
+
+### Setup Ruby environment
+
+Install Ruby and bundler:
+
+    rbenv install 2.1.1
+    rbenv global 2.1.1
+    gem install bundler
+    rbenv rehash
+
+## Set OS X defaults
+
+Set OS X defaults with:
+
+    source defaults/osx.sh
