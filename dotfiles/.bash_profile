@@ -28,11 +28,6 @@ done
 # Autocomplete Grunt commands
 which grunt > /dev/null && eval "$(grunt --completion=bash)"
 
-# Load up Boxen
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 # wrap git with hub
 #eval "$(hub alias -s)"
 
@@ -40,4 +35,4 @@ which grunt > /dev/null && eval "$(grunt --completion=bash)"
 #export RBENV_ROOT="$(brew --prefix rbenv)"
 #export GEM_HOME="$(brew --prefix)/opt/gems"
 #export GEM_PATH="$(brew --prefix)/opt/gems"
-#eval "$(rbenv init -)"
+eval "$(rbenv init -)"

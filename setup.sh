@@ -1,4 +1,8 @@
 #!/bin/bash
 
-ruby dotfiles/bootstrap.rb
-source defaults/osx.sh
+cd dotfiles
+ruby bootstrap.rb
+cd ..
+cd defaults
+source osx.sh
+cd ..

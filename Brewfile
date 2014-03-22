@@ -7,7 +7,11 @@ upgrade
 # Tap useful formulae
 tap homebrew/science
 
-# Install useful formulae
+# Install ruby formulae
+install rbenv
+install ruby-build
+
+# Install science formulae
 install beast
 install beagle
 
