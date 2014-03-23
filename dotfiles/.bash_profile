@@ -35,4 +35,5 @@ which grunt > /dev/null && eval "$(grunt --completion=bash)"
 export RBENV_ROOT="$(brew --prefix rbenv)"
 export GEM_HOME="$(brew --prefix)/opt/gems"
 export GEM_PATH="$(brew --prefix)/opt/gems"
+export PATH=$GEM_PATH/bin:$PATH
 eval "$(rbenv init -)"
