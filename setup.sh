@@ -13,5 +13,8 @@ echo "Setup Ruby environment"
 rbenv install 2.1.1
 rbenv global 2.1.1
 gem install bundler
+bundle install
 rbenv rehash
 
+echo "Setup Python environment"
+pip install --egg -r requirements.txt

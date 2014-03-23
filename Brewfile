@@ -11,6 +11,10 @@ tap homebrew/science
 install rbenv
 install ruby-build
 
+# Install python formulae
+install gfortran
+install python
+
 # Install science formulae
 install beast
 install beagle

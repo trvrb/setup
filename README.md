@@ -30,14 +30,23 @@ Install all packages in [`Brewfile`](Brewfile) with:
 
     brew bundle Brewfile
 
+Includes Ruby and Python package managers (`gem` and `pip`).
+
 ### Setup Ruby environment
 
-Install Ruby and bundler:
+Setup Ruby environment, including `bundler` and contents of [`Gemfile`](Gemfile):
 
     rbenv install 2.1.1
     rbenv global 2.1.1
     gem install bundler
+    bundle install
     rbenv rehash
+    
+### Setup Python environment
+
+Install contents of [`requirements.txt`](requirements.txt):
+
+    pip install --egg -r requirements.txt
 
 ## Set OS X defaults
 
