@@ -19,5 +19,8 @@ install python
 install beast
 install beagle
 
+# Install other formulae
+install aspell --with-lang-en
+
 # Remove outdated versions from the cellar
 cleanup
