@@ -18,6 +18,7 @@ install python
 # Install science formulae
 install beast
 install beagle
+install raxml
 
 # Install other formulae
 install aspell --with-lang-en
