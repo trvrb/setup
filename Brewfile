@@ -20,8 +20,11 @@ install beast
 install beagle
 install raxml
 
-# Install other formulae
+# Install latex formulae
 install aspell --with-lang-en
+
+# Install web formulae
+install heroku-toolbelt
 
 # Remove outdated versions from the cellar
 cleanup
