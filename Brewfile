@@ -4,6 +4,10 @@ update
 # Upgrade any already-installed formulae
 upgrade
 
+# Setup brew-cask
+tap phinze/cask
+install brew-cask
+
 # Tap useful formulae
 tap homebrew/science
 
@@ -21,6 +25,7 @@ install beagle
 install raxml
 
 # Install latex formulae
+cask install mactex
 install aspell --with-lang-en
 
 # Install web formulae
