@@ -37,3 +37,9 @@ export GEM_HOME="$(brew --prefix)/opt/gems"
 export GEM_PATH="$(brew --prefix)/opt/gems"
 export PATH=$GEM_PATH/bin:$PATH
 eval "$(rbenv init -)"
+
+# Load pip and set python path
+export PYTHONPATH="$(brew --prefix)/bin/"
+
+# Homebrew path takes precedence
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
