@@ -19,6 +19,9 @@ install ruby-build
 install gfortran
 install python
 
+# Install node formulae
+install npm
+
 # Install science formulae
 install beast
 install beagle
