@@ -43,3 +43,6 @@ export PYTHONPATH="$(brew --prefix)/bin/"
 
 # Homebrew path takes precedence
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+# Load docker host path
+export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
