@@ -46,3 +46,9 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # Load docker host path
 export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
+docker-enter() { boot2docker ssh -t "[ -f /var/lib/boot2docker/nsenter ] || docker run --rm -v /var/lib/boot2docker/:/target jpetazzo/nsenter; sudo /var/lib/boot2docker/docker-enter $@"; }
+
+# AWS
+export JAVA_HOME="$(/usr/libexec/java_home)"
+export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.1.0/libexec"
+

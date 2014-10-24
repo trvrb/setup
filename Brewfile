@@ -34,5 +34,9 @@ install aspell --with-lang-en
 # Install web formulae
 install heroku-toolbelt
 
+# Install AWS tools
+install ec2-api-tools
+install aws-elasticbeanstalk
+
 # Remove outdated versions from the cellar
 cleanup
