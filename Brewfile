@@ -18,6 +18,8 @@ install ruby-build
 # Install python formulae
 install gfortran
 install python
+install pyqt
+install zmq
 
 # Install node formulae
 install npm
@@ -33,6 +35,10 @@ install aspell --with-lang-en
 
 # Install web formulae
 install heroku-toolbelt
+
+# Install AWS tools
+install ec2-api-tools
+install aws-elasticbeanstalk
 
 # Remove outdated versions from the cellar
 cleanup

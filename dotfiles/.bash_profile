@@ -46,3 +46,10 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # Load docker host path
 export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
+export DOCKER_CERT_PATH=/Users/trvrb/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+
+# AWS
+export JAVA_HOME="$(/usr/libexec/java_home)"
+export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.1.0/libexec"
+
