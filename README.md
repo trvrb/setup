@@ -22,7 +22,7 @@ Link dotfiles with:
 
 Install Homebrew with:
 
-    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 ### Install Homebrew packages
 
