@@ -34,6 +34,7 @@
 	attributesfile = ~/.gitattributes
 	# Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
 	whitespace = space-before-tab,indent-with-non-tab,trailing-space
+	autocrlf = true
 
 [color]
 	# Use colors in Git commands that are capable of colored output when outputting to the terminal
@@ -76,7 +77,7 @@
 	insteadOf = "gist:"
 
 [push]
-	default = simple
+	default = current
 [user]
 	name = Trevor Bedford
 	email = trvrb@trevorbedford.com
@@ -98,3 +99,14 @@
 protocol = https
 [credential]
 	helper = osxkeychain
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
