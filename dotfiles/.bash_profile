@@ -45,9 +45,10 @@ export PYTHONPATH="$(brew --prefix)/bin/"
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # Load docker host path
-export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
-export DOCKER_CERT_PATH=/Users/trvrb/.boot2docker/certs/boot2docker-vm
+export DOCKER_HOST=tcp://192.168.99.100:2376
+export DOCKER_MACHINE_NAME=default
 export DOCKER_TLS_VERIFY=1
+export DOCKER_CERT_PATH=/Users/trvrb/.docker/machine/machines/default
 
 # AWS
 export JAVA_HOME="$(/usr/libexec/java_home)"
