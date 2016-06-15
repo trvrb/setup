@@ -1,44 +1,37 @@
-# Make sure we’re using the latest Homebrew
-update
-
-# Upgrade any already-installed formulae
-upgrade
-
 # Setup brew-cask
-tap phinze/cask
-install brew-cask
+tap 'phinze/cask'
+brew 'brew-cask'
 
 # Tap useful formulae
-tap homebrew/science
+tap 'homebrew/science'
+
+# Install java
+cask 'java'
 
 # Install ruby formulae
-install rbenv
-install ruby-build
+brew 'rbenv'
+brew 'ruby-build'
 
 # Install python formulae
-install gfortran
-install python
-install pyqt
-install zmq
+brew 'gcc'
+brew 'python'
+brew 'pyqt'
+brew 'zmq'
 
 # Install node formulae
-install npm
+brew 'npm'
 
 # Install science formulae
-install beast
-install beagle
-install raxml
+brew 'beast'
+brew 'beagle'
+brew 'raxml'
 
 # Install latex formulae
-cask install mactex
-install aspell --with-lang-en
+cask 'mactex'
+brew 'aspell', args: ['--with-lang-en']
 
 # Install web formulae
-install heroku-toolbelt
+brew 'heroku-toolbelt'
 
 # Install AWS tools
-install ec2-api-tools
-install aws-elasticbeanstalk
-
-# Remove outdated versions from the cellar
-cleanup
+brew 'ec2-api-tools'

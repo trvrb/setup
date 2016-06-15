@@ -8,6 +8,7 @@ Desktop.ini
 # Thumbnail cache files
 ._*
 Thumbs.db
+.DS_Store
 
 # Files that might appear on external disks
 .Spotlight-V100

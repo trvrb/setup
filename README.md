@@ -28,6 +28,8 @@ Install Homebrew with:
 
 Install all packages in [`Brewfile`](Brewfile) with:
 
+    brew update
+    brew tap Homebrew/bundle
     brew bundle
 
 Includes Ruby and Python package managers (`gem` and `pip`).
