@@ -25,6 +25,9 @@ brew 'npm'
 brew 'beast'
 brew 'beagle'
 brew 'raxml'
+brew 'mafft'
+brew 'fasttree'
+brew 'homebrew/versions/gcc49'
 
 # Install latex formulae
 cask 'mactex'
