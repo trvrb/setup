@@ -34,6 +34,10 @@ Install all packages in [`Brewfile`](Brewfile) with:
 
 Includes Ruby and Python package managers (`gem` and `pip`).
 
+### Setup paths
+
+    ln -f -s /usr/local/bin/raxmlHPC-PTHREADS-AVX /usr/local/bin/raxml
+
 ### Setup Ruby environment
 
 Setup Ruby environment, including `bundler` and contents of [`Gemfile`](Gemfile):

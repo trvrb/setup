@@ -11,6 +11,9 @@ brew update
 brew tap Homebrew/bundle
 brew bundle
 
+echo "Setup some paths"
+ln -f -s /usr/local/bin/raxmlHPC-PTHREADS-AVX /usr/local/bin/raxml
+
 echo "Setup Ruby environment"
 rbenv install 2.1.1
 rbenv global 2.1.1

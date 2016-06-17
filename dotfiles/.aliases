@@ -87,5 +87,3 @@ alias badge="tput bel"
 # Alias GCC
 alias gcc="/usr/local/bin/gcc-6"
 
-# Alias raxml
-alias raxml="/usr/local/bin/raxmlHPC-PTHREADS-AVX"
