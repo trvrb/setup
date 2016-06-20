@@ -80,7 +80,7 @@
 	default = current
 [user]
 	name = Trevor Bedford
-	email = trvrb@trevorbedford.com
+	email = trevor@bedford.io
 [github]
 	user = trvrb
 [difftool "Kaleidoscope"]
