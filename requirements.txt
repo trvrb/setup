@@ -1,3 +1,4 @@
+biopython
 scons
 seqmagick
 boto

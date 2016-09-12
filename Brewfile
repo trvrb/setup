@@ -1,9 +1,14 @@
-# Setup brew-cask
-tap 'phinze/cask'
-brew 'brew-cask'
-
 # Tap useful formulae
 tap 'homebrew/science'
+tap 'homebrew/versions'
+tap 'caskroom/cask'
+
+# Install GUI apps
+cask 'atom'
+cask 'gitkraken'
+cask 'launchbar'
+cask 'slack'
+cask 'kaleidoscope'
 
 # Install java
 cask 'java'
@@ -27,7 +32,7 @@ brew 'beagle'
 brew 'raxml'
 brew 'mafft'
 brew 'fasttree'
-brew 'homebrew/versions/gcc49'
+brew 'gcc49'
 
 # Install latex formulae
 cask 'mactex'

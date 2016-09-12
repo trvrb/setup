@@ -3,6 +3,9 @@
 echo "Symlink dotfiles"
 ruby dotfiles/symlink.rb
 
+echo "Refresh paths"
+source ~/.bashrc
+
 echo "Install Homebrew"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
