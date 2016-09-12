@@ -9,6 +9,7 @@ cask 'gitkraken'
 cask 'launchbar'
 cask 'slack'
 cask 'kaleidoscope'
+cask 'geneious'
 
 # Install java
 cask 'java'
