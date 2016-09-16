@@ -4,12 +4,14 @@ tap 'homebrew/versions'
 tap 'caskroom/cask'
 
 # Install GUI apps
+cask 'google-chrome'
 cask 'atom'
 cask 'gitkraken'
 cask 'launchbar'
 cask 'slack'
 cask 'kaleidoscope'
 cask 'geneious'
+cask 'vlc'
 
 # Install java
 cask 'java'
