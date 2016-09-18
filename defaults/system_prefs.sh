@@ -110,6 +110,12 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeF
 # Enable “natural” (Lion-style) scrolling
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 
+# trackpad cursor speed
+defaults write NSGlobalDomain com.apple.trackpad.scaling -int 1
+
+# stop all those damn noises
+defaults write NSGlobalDomain com.apple.sound.beep.feedback -bool false
+
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
@@ -117,7 +123,8 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set a fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 0
+defaults write NSGlobalDomain InitialKeyRepeat -int 25
+defaults write NSGlobalDomain KeyRepeat -int 2
 
 # Automatically illuminate built-in MacBook keyboard in low light
 defaults write com.apple.BezelServices kDim -bool true
@@ -137,6 +144,16 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 
 # Enable HiDPI display modes (requires restart)
 sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+
+###############################################################################
+# Energy                                                                      #
+###############################################################################
+
+# on battery
+sudo pmset -b sleep 20 disksleep 15 displaysleep 10 halfdim 5
+
+# on power adapter
+sudo pmset -c sleep 0 disksleep 15 displaysleep 15 halfdim 5
 
 ###############################################################################
 # Finder                                                                      #
