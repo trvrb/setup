@@ -12,6 +12,9 @@ cask 'slack'
 cask 'kaleidoscope'
 cask 'geneious'
 cask 'vlc'
+cask 'transmit'
+cask 'skype'
+cask './formula/bbedit.rb'
 
 # Install java
 cask 'java'
