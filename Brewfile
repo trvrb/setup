@@ -2,6 +2,7 @@
 tap 'homebrew/science'
 tap 'homebrew/versions'
 tap 'caskroom/cask'
+tap 'caskroom/fonts'
 
 # Install GUI apps
 cask 'atom'
@@ -16,6 +17,7 @@ cask 'slack'
 cask 'transmit'
 cask 'vlc'
 cask './formula/bbedit.rb'
+cask 'figtree'
 
 # Install java
 cask 'java'
