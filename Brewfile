@@ -47,8 +47,7 @@ brew 'gcc49'
 cask 'mactex'
 brew 'aspell', args: ['--with-lang-en']
 
-# Install web formulae
+# Install other formulae
 brew 'heroku-toolbelt'
-
-# Install AWS tools
 brew 'ec2-api-tools'
+brew 'rethinkdb'
