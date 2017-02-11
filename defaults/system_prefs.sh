@@ -112,7 +112,7 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeF
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 
 # trackpad cursor speed
-defaults write NSGlobalDomain com.apple.trackpad.scaling -int 1
+defaults write NSGlobalDomain com.apple.trackpad.scaling -int 4
 
 # stop all those damn noises
 defaults write NSGlobalDomain com.apple.sound.beep.feedback -bool false
