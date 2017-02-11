@@ -12,17 +12,19 @@ Do all the following with:
 
     source setup.sh
 
+### Install Homebrew
+
+Install Homebrew with:
+
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 ### Link dotfiles
 
 Link dotfiles with:
 
     ruby dotfiles/symlink.rb
 
-### Install Homebrew
-
-Install Homebrew with:
-
-	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+You'll need to update `User` and `GitHub` in `dotfiles/.gitconfig`.
 
 ### Install Homebrew packages
 
@@ -47,7 +49,7 @@ Setup Ruby environment, including `bundler` and contents of [`Gemfile`](Gemfile)
     gem install bundler
     bundle install
     rbenv rehash
-    
+
 ### Setup Python environment
 
 Install contents of [`requirements.txt`](requirements.txt):
@@ -56,6 +58,6 @@ Install contents of [`requirements.txt`](requirements.txt):
 
 ## Set OS X defaults
 
-Set OS X defaults with:
+Set OS X defaults with computer name of `Name`:
 
-    source defaults/osx.sh
+    source defaults/osx.sh Name

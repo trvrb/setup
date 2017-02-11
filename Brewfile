@@ -29,7 +29,6 @@ brew 'ruby-build'
 # Install python formulae
 brew 'gcc'
 brew 'python'
-brew 'pyqt'
 brew 'zmq'
 
 # Install node formulae

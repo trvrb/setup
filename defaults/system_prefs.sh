@@ -1,4 +1,5 @@
 #!/bin/bash
+name="$1"
 
 echo "Setting system preferences"
 
@@ -12,9 +13,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX                                                               #
 ###############################################################################
 
-sudo scutil --set ComputerName "Fenrir" && \
-sudo scutil --set HostName "Fenrir" && \
-sudo scutil --set LocalHostName "Fenrir" && \
+sudo scutil --set ComputerName $name && \
+sudo scutil --set HostName $name && \
+sudo scutil --set LocalHostName $name && \
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Fenrir"
 
 # Set standby delay to 24 hours (default is 1 hour)
