@@ -18,6 +18,7 @@ cask 'transmit'
 cask 'vlc'
 cask './formula/bbedit.rb'
 cask 'figtree'
+cask 'sketch'
 
 # Install java
 cask 'java'
