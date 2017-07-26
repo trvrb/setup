@@ -1,9 +1,7 @@
 biopython
-scons
 seqmagick
 boto
 virtualenv
-virtualenvwrapper
 numpy
 scipy
 matplotlib
