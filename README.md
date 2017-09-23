@@ -44,8 +44,8 @@ Includes Ruby and Python package managers (`gem` and `pip`).
 
 Setup Ruby environment, including `bundler` and contents of [`Gemfile`](Gemfile):
 
-    rbenv install 2.1.1
-    rbenv global 2.1.1
+    rbenv install 2.3.4
+    rbenv global 2.3.4
     gem install bundler
     bundle install
     rbenv rehash
