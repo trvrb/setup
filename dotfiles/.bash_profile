@@ -44,6 +44,9 @@ export PYTHONPATH="$(brew --prefix)/bin/"
 # Homebrew path takes precedence
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
+# Add miniconda path
+export PATH=~/miniconda3/bin:$PATH
+
 # AWS
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.1.0/libexec"
