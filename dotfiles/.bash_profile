@@ -40,6 +40,7 @@ eval "$(rbenv init -)"
 
 # Load pip and set python path
 export PYTHONPATH="$(brew --prefix)/bin/"
+export PYTHONPATH="${PYTHONPATH}:/Users/trvrb/Documents/src/baltic"
 
 # Homebrew path takes precedence
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
