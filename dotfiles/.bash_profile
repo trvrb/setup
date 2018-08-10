@@ -45,9 +45,10 @@ export PYTHONPATH="${PYTHONPATH}:/Users/trvrb/Documents/src/baltic"
 # Homebrew path takes precedence
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
-# Add miniconda path after homebrew
-export PATH=$PATH:~/miniconda3/bin
-
 # AWS
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.1.0/libexec"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
