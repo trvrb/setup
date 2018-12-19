@@ -49,6 +49,10 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.1.0/libexec"
 
+# pyenv
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+# GPG
+export GPG_TTY=$(tty)
