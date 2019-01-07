@@ -81,6 +81,7 @@
 [user]
 	name = Trevor Bedford
 	email = trevor@bedford.io
+	signingkey = 08FC12512E7B73D7
 [github]
 	user = trvrb
 [difftool "Kaleidoscope"]
