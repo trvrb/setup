@@ -54,5 +54,8 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
+# NPM
+export PATH=~/.npm-global/bin:$PATH
+
 # GPG
 export GPG_TTY=$(tty)
