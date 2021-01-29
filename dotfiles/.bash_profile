@@ -1,3 +1,6 @@
+# Homebrew
+eval $(/opt/homebrew/bin/brew shellenv)
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -28,6 +31,9 @@ done
 # Autocomplete Grunt commands
 which grunt > /dev/null && eval "$(grunt --completion=bash)"
 
+# Hide Terminal warning
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # Load pip and set python path
 export PYTHONPATH="$(brew --prefix)/bin/"
 
@@ -37,8 +43,5 @@ export PATH=~/.npm-global/bin:$PATH
 # GPG
 export GPG_TTY=$(tty)
 
-# Homebrew
-eval $(/opt/homebrew/bin/brew shellenv)
-
 # Ruby
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby@2.7/bin:$PATH"
