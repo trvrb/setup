@@ -1,9 +1,4 @@
 # SSH
-alias haldane="ssh tbedford@haldane.bio.ed.ac.uk"
-alias darwin="ssh tbedford@darwin.bio.ed.ac.uk"
-alias eddie="ssh tbedford@frontend03.ecdf.ed.ac.uk"
-alias wallace="ssh tbedford@wallace.bio.ed.ac.uk"
-alias scharp="ssh tbedford@linux.scharp.org"
 alias rhino="ssh tbedford@rhino.fhcrc.org"
 
 # Mathematica
@@ -86,4 +81,3 @@ alias badge="tput bel"
 
 # Alias GCC
 alias gcc="/usr/local/bin/gcc-6"
-

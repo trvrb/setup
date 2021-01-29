@@ -1,8 +1,8 @@
+numpy
 biopython
 seqmagick
 boto
 virtualenv
-numpy
 scipy
 matplotlib
 ipython[notebook]

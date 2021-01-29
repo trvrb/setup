@@ -16,7 +16,7 @@ Do all the following with:
 
 Install Homebrew with:
 
-	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 ### Link dotfiles
 
@@ -36,25 +36,21 @@ Install all packages in [`Brewfile`](Brewfile) with:
 
 Includes Ruby and Python package managers (`gem` and `pip`).
 
-### Setup paths
+## Update symlinks
 
-    ln -f -s /usr/local/bin/raxmlHPC-PTHREADS-AVX /usr/local/bin/raxml
+    ln -s -f /opt/homebrew/opt/python/bin/python3 /opt/homebrew/opt/python/bin/python
 
 ### Setup Ruby environment
 
-Setup Ruby environment, including `bundler` and contents of [`Gemfile`](Gemfile):
-
-    rbenv install 2.3.4
-    rbenv global 2.3.4
-    gem install bundler
-    bundle install
-    rbenv rehash
+<!-- Need to setup Ruby Gems -->
 
 ### Setup Python environment
 
+<!-- Need to setup Python dependencies, especially numpy, etc.. -->
+
 Install contents of [`requirements.txt`](requirements.txt):
 
-    pip install --egg -r requirements.txt
+    pip3 install --egg -r requirements.txt
 
 ## Set OS X defaults
 

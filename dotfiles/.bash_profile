@@ -28,34 +28,17 @@ done
 # Autocomplete Grunt commands
 which grunt > /dev/null && eval "$(grunt --completion=bash)"
 
-# wrap git with hub
-#eval "$(hub alias -s)"
-
-# Load rbenv and set gem paths
-export RBENV_ROOT="$(brew --prefix rbenv)"
-export GEM_HOME="$(brew --prefix)/opt/gems"
-export GEM_PATH="$(brew --prefix)/opt/gems"
-export PATH=$GEM_PATH/bin:$PATH
-eval "$(rbenv init -)"
-
 # Load pip and set python path
 export PYTHONPATH="$(brew --prefix)/bin/"
-export PYTHONPATH="${PYTHONPATH}:/Users/trvrb/Documents/src/baltic"
-
-# Homebrew path takes precedence
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-
-# AWS
-export JAVA_HOME="$(/usr/libexec/java_home)"
-export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.1.0/libexec"
-
-# pyenv
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
 
 # NPM
 export PATH=~/.npm-global/bin:$PATH
 
 # GPG
 export GPG_TTY=$(tty)
+
+# Homebrew
+eval $(/opt/homebrew/bin/brew shellenv)
+
+# Ruby
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
