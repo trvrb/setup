@@ -45,3 +45,7 @@ export GPG_TTY=$(tty)
 
 # Ruby
 export PATH="/opt/homebrew/opt/ruby@2.7/bin:$PATH"
+
+# Python
+export PATH="/opt/homebrew/opt/python/bin:$PATH"
+export PYTHONPATH="/opt/homebrew/opt/python/bin"

@@ -1,10 +1,10 @@
-numpy
 biopython
-seqmagick
 boto
+cython
 virtualenv
-scipy
 matplotlib
 ipython[notebook]
 pyzmq
 pygments
+snakemake
+nextstrain-augur

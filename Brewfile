@@ -26,6 +26,9 @@ brew 'ruby'
 brew 'gcc'
 brew 'python'
 brew 'zmq'
+brew 'cython'
+brew 'numpy'
+brew 'scipy'
 
 # Install node formulae
 brew 'npm'
@@ -43,3 +46,4 @@ brew 'aspell', args: ['--with-lang-en']
 brew 'heroku'
 brew 'awscli'
 brew 'rethinkdb'
+brew 'git-lfs'

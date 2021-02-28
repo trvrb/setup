@@ -36,21 +36,21 @@ Install all packages in [`Brewfile`](Brewfile) with:
 
 Includes Ruby and Python package managers (`gem` and `pip`).
 
-## Update symlinks
-
-    ln -s -f /opt/homebrew/opt/python/bin/python3 /opt/homebrew/opt/python/bin/python
-
-### Setup Ruby environment
-
-<!-- Need to setup Ruby Gems -->
-
 ### Setup Python environment
 
-<!-- Need to setup Python dependencies, especially numpy, etc.. -->
+    brew link python@3.9
+    ln -s -f /opt/homebrew/opt/python/bin/python3 /opt/homebrew/opt/python/bin/python
+    ln -s -f /opt/homebrew/opt/python/bin/pip3 /opt/homebrew/opt/python/bin/pip
 
 Install contents of [`requirements.txt`](requirements.txt):
 
     pip3 install --egg -r requirements.txt
+
+Pandas currently requires installing from source via:
+
+    git clone https://github.com/pandas-dev/pandas.git
+    cd pandas
+    python3 setup.py install
 
 ## Set OS X defaults
 
