@@ -26,6 +26,8 @@ Link dotfiles with:
 
 You'll need to update `User` and `GitHub` in `dotfiles/.gitconfig`.
 
+Open Terminal Settings and change default shell to `/bin/bash`.
+
 ### Install Homebrew packages
 
 Install all packages in [`Brewfile`](Brewfile) with:
@@ -57,3 +59,9 @@ Pandas currently requires installing from source via:
 Set OS X defaults with computer name of `Name`:
 
     source defaults/osx.sh Name
+    
+## Install remaining applications
+
+TODO:
+ - iq2tree from patch https://github.com/Homebrew/homebrew-core/blob/573b15f29e31ba4143ae8137111cf87a3f181829/Formula/iqtree2.rb
+ 

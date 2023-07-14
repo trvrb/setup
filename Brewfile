@@ -6,17 +6,19 @@ tap 'heroku/brew'
 
 # Install GUI apps
 cask 'atom'
+cask 'bbedit'
 cask 'dropbox'
+cask 'fantastical'
+cask 'figtree'
 cask 'gitkraken'
+cask 'google-chrome'
 cask 'kaleidoscope'
 cask 'launchbar'
+cask 'sketch'
 cask 'skype'
 cask 'slack'
 cask 'transmit'
 cask 'vlc'
-cask 'bbedit'
-cask 'figtree'
-cask 'sketch'
 cask 'zoom'
 
 # Install ruby formulae
@@ -36,14 +38,16 @@ brew 'npm'
 # Install science formulae
 brew 'mafft'
 brew 'fasttree'
-brew 'iqtree2'
+# brew 'iqtree2' // M1 not supported
 
 # Install latex formulae
 cask 'mactex'
-brew 'aspell', args: ['--with-lang-en']
+brew 'aspell'
 
 # Install other formulae
-brew 'heroku'
 brew 'awscli'
-brew 'rethinkdb'
+brew 'docker'
 brew 'git-lfs'
+brew 'heroku'
+brew 'rethinkdb'
+
