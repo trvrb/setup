@@ -14,12 +14,13 @@ brew update
 brew tap Homebrew/bundle
 brew bundle
 
-echo "Setup Ruby environment"
-rbenv install 2.1.1
-rbenv global 2.1.1
-gem install bundler
-ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future bundle install
-rbenv rehash
-
 echo "Setup Python environment"
-pip install --egg -r requirements.txt
+brew link python@3.11
+ln -s -f /opt/homebrew/opt/python/bin/python3 /opt/homebrew/opt/python/bin/python
+ln -s -f /opt/homebrew/opt/python/bin/pip3 /opt/homebrew/opt/python/bin/pip
+pip install -r requirements.txt
+
+echo "Setup Ruby environment"
+rbenv install 2.7.6
+rbenv global 2.7.6
+sudo gem install bundler

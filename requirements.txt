@@ -4,6 +4,7 @@ cython
 virtualenv
 matplotlib
 ipython[notebook]
+pandas
 pyzmq
 pygments
 snakemake

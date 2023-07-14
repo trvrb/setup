@@ -23,6 +23,7 @@ cask 'zoom'
 
 # Install ruby formulae
 brew 'ruby'
+brew 'rbenv'
 
 # Install python formulae
 brew 'gcc'
