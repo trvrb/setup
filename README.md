@@ -43,9 +43,6 @@ Includes Ruby and Python package managers (`gem` and `pip`).
     brew link python@3.11
     ln -s -f /opt/homebrew/opt/python/bin/python3 /opt/homebrew/opt/python/bin/python
     ln -s -f /opt/homebrew/opt/python/bin/pip3 /opt/homebrew/opt/python/bin/pip
-
-Install contents of [`requirements.txt`](requirements.txt):
-
     pip3 install -r requirements.txt
 
 ### Setup Ruby environment
@@ -59,9 +56,21 @@ Install contents of [`requirements.txt`](requirements.txt):
 Set OS X defaults with computer name of `Name`:
 
     source defaults/osx.sh Name
-    
+
+## Manual updates
+
+- Enable Full Disk Access for Terminal under Privacy and Security in System Settings.
+- Import `trvrb.terminal` as default profile in Terminal Settings
+- Add GitHub SSH key
+
 ## Install remaining applications
 
-TODO:
- - iq2tree from patch https://github.com/Homebrew/homebrew-core/blob/573b15f29e31ba4143ae8137111cf87a3f181829/Formula/iqtree2.rb
- 
+Download and install Kaleidoscope 2.4.5 from https://cloud.kaleidoscope.app/download/v2
+
+Sign into Mac App Store and install:
+ - 1Password
+ - Bear
+
+## TODO
+
+Install iq2tree from patch https://github.com/Homebrew/homebrew-core/blob/573b15f29e31ba4143ae8137111cf87a3f181829/Formula/iqtree2.rb
