@@ -71,6 +71,12 @@ Sign into Mac App Store and install:
  - 1Password
  - Bear
 
+## Install Nextstrain tooling
+
+Install Nextstrain CLI
+
+    curl -fsSL --proto '=https' https://nextstrain.org/cli/installer/mac | bash
+
 ## TODO
 
 Install iq2tree from patch https://github.com/Homebrew/homebrew-core/blob/573b15f29e31ba4143ae8137111cf87a3f181829/Formula/iqtree2.rb
