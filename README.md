@@ -49,7 +49,7 @@ Includes Ruby and Python package managers (`gem` and `pip`).
 
 	rbenv install 2.7.6
 	rbenv global 2.7.6
-	sudo gem install bundler
+	gem install bundler
 
 ## Set OS X defaults
 

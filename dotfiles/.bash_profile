@@ -44,7 +44,7 @@ export PATH=~/.npm-global/bin:$PATH
 export GPG_TTY=$(tty)
 
 # Ruby
-export PATH="/opt/homebrew/opt/ruby@2.7/bin:$PATH"
+eval "$(rbenv init - bash)"
 
 # Python
 export PATH="/opt/homebrew/opt/python/bin:$PATH"

@@ -23,6 +23,7 @@ cask 'zoom'
 # Install ruby formulae
 brew 'ruby'
 brew 'rbenv'
+brew 'ruby-build'
 
 # Install python formulae
 brew 'gcc'
@@ -50,4 +51,3 @@ brew 'docker'
 brew 'git-lfs'
 brew 'heroku'
 brew 'rethinkdb'
-
