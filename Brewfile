@@ -36,6 +36,9 @@ brew 'scipy'
 # Install node formulae
 brew 'npm'
 
+# Install java formulae
+brew 'java'
+
 # Install science formulae
 brew 'mafft'
 brew 'fasttree'

@@ -51,6 +51,12 @@ Includes Ruby and Python package managers (`gem` and `pip`).
 	rbenv global 2.7.6
 	gem install bundler
 
+### Setup Java environment
+
+Setup symlink (found via `brew info openjdk`)
+
+  sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+
 ## Set OS X defaults
 
 Set OS X defaults with computer name of `Name`:
