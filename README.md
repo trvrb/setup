@@ -53,9 +53,9 @@ Includes Ruby and Python package managers (`gem` and `pip`).
 
 ### Setup Java environment
 
-Setup symlink (found via `brew info openjdk`)
+Setup symlink (as suggested by brew install)
 
-  sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+  sudo ln -sfn /opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
 
 ## Set OS X defaults
 

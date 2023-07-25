@@ -37,7 +37,7 @@ brew 'scipy'
 brew 'npm'
 
 # Install java formulae
-brew 'java'
+brew 'openjdk@11'
 
 # Install science formulae
 brew 'mafft'
