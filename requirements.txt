@@ -9,3 +9,4 @@ pyzmq
 pygments
 snakemake
 nextstrain-augur
+epiweeks
