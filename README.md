@@ -47,15 +47,15 @@ Includes Ruby and Python package managers (`gem` and `pip`).
 
 ### Setup Ruby environment
 
-	rbenv install 2.7.6
-	rbenv global 2.7.6
-	gem install bundler
+    rbenv install 2.7.6
+    rbenv global 2.7.6
+    gem install bundler
 
 ### Setup Java environment
 
 Setup symlink (as suggested by brew install)
 
-  sudo ln -sfn /opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
+    sudo ln -sfn /opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
 
 ## Set OS X defaults
 
@@ -71,11 +71,15 @@ Set OS X defaults with computer name of `Name`:
 
 ## Install remaining applications
 
-Download and install Kaleidoscope 2.4.5 from https://cloud.kaleidoscope.app/download/v2
-
 Sign into Mac App Store and install:
  - 1Password
  - Bear
+ - Microsoft Word
+ - Microsoft Excel
+
+Licenses for Office are through fredhutch.org account (next time move these to brew install).
+
+Download and install Kaleidoscope 2.4.5 from https://cloud.kaleidoscope.app/download/v2. Download and install Mathematica 12.3.1 from https://user.wolfram.com/.
 
 ## Install remaining Nextstrain components
 
@@ -96,10 +100,12 @@ Install iqtree2
 
 Install nextalign
 
-    curl -fsSL "https://github.com/nextstrain/nextclade/releases/latest/download/nextalign-aarch64-apple-darwin" -o "nextalign" && chmod +x nextalign
+    curl -fsSL "https://github.com/nextstrain/nextclade/releases/latest/download/nextalign-aarch64-apple-darwin" -o "nextalign"
+    chmod +x nextalign
     sudo mv nextalign /usr/local/bin/
 
 Install nextclade
 
-    curl -fsSL "https://github.com/nextstrain/nextclade/releases/latest/download/nextclade-aarch64-apple-darwin" -o "nextclade" && chmod +x nextclade
+    curl -fsSL "https://github.com/nextstrain/nextclade/releases/latest/download/nextclade-aarch64-apple-darwin" -o "nextclade"
+    chmod +x nextclade
     sudo mv nextclade /usr/local/bin/
