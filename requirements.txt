@@ -10,3 +10,6 @@ pygments
 snakemake
 nextstrain-augur
 epiweeks
+jax==0.4.7
+jaxlib==0.4.7
+evofr
