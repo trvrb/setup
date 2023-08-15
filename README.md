@@ -109,3 +109,8 @@ Install nextclade
     curl -fsSL "https://github.com/nextstrain/nextclade/releases/latest/download/nextclade-aarch64-apple-darwin" -o "nextclade"
     chmod +x nextclade
     sudo mv nextclade /usr/local/bin/
+
+Install tsv-utils
+
+    curl -L https://github.com/eBay/tsv-utils/releases/download/v2.2.1/tsv-utils-v2.2.1_osx-x86_64_ldc2.tar.gz | tar xz
+    sudo mv tsv-utils-v2.2.1_osx-x86_64_ldc2/bin/* /usr/local/bin/       
