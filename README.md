@@ -81,6 +81,11 @@ Licenses for Office are through fredhutch.org account (next time move these to b
 
 Download and install Kaleidoscope 2.4.5 from https://cloud.kaleidoscope.app/download/v2. Download and install Mathematica 12.3.1 from https://user.wolfram.com/.
 
+Install chromium and decktape via
+
+    brew install chromium --no-quarantine
+    npm install -g decktape
+
 ## Install remaining Nextstrain components
 
 Install Nextstrain CLI
