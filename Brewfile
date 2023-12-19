@@ -7,6 +7,7 @@ tap 'heroku/brew'
 # Install GUI apps
 cask 'atom'
 cask 'bbedit'
+cask 'docker'
 cask 'dropbox'
 cask 'fantastical'
 cask 'figtree'
@@ -51,7 +52,6 @@ brew 'aspell'
 
 # Install other formulae
 brew 'awscli'
-brew 'docker'
 brew 'git-lfs'
 brew 'heroku'
 brew 'rethinkdb'
