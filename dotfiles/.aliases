@@ -81,3 +81,7 @@ alias badge="tput bel"
 
 # Alias GCC
 alias gcc="/usr/local/bin/gcc-6"
+
+# Alias Python
+alias python=python3.9
+alias pip=pip3.9
