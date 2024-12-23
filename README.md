@@ -40,9 +40,11 @@ Includes Ruby and Python package managers (`gem` and `pip`).
 
 ### Setup Python environment
 
-    brew link python@3.11
-    ln -s -f /opt/homebrew/opt/python/bin/python3 /opt/homebrew/opt/python/bin/python
-    ln -s -f /opt/homebrew/opt/python/bin/pip3 /opt/homebrew/opt/python/bin/pip
+    brew link python@3.9
+    ln -s -f /opt/homebrew/opt/python@3.9/bin/python3.9 /opt/homebrew/opt/python@3.9/bin/python
+    ln -s -f /opt/homebrew/opt/python@3.9/bin/python3.9 /opt/homebrew/opt/python@3.9/bin/python3
+    ln -s -f /opt/homebrew/opt/python@3.9/bin/pip3.9 /opt/homebrew/opt/python@3.9/bin/pip
+    ln -s -f /opt/homebrew/opt/python@3.9/bin/pip3.9 /opt/homebrew/opt/python@3.9/bin/pip3
     pip3 install -r requirements.txt
 
 ### Setup Ruby environment

@@ -47,8 +47,8 @@ export GPG_TTY=$(tty)
 eval "$(rbenv init - bash)"
 
 # Python
-export PATH="/opt/homebrew/opt/python/bin:$PATH"
-export PYTHONPATH="/opt/homebrew/opt/python/bin"
+export PATH="/opt/homebrew/opt/python@3.9/bin:$PATH"
+export PYTHONPATH="/opt/homebrew/opt/python@3.9/bin"
 
 # Nextstrain
 export PATH="/Users/trvrb/.nextstrain/cli-standalone:$PATH"
