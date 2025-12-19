@@ -1,0 +1,18 @@
+Host github.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
+
+Host snail
+    HostName snail.fhcrc.org
+    User tbedford
+
+Host conatus
+    HostName conatus.fhcrc.org
+    User tbedford
+    ProxyJump snail
+
+Host rhino
+    HostName rhino.fhcrc.org
+    User tbedford
+    ProxyJump snail
