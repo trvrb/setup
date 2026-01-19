@@ -8,10 +8,6 @@ Install command line tools (includes git) with:
 
 ## Setup
 
-Do all the following with:
-
-    source setup.sh
-
 ### Install Homebrew
 
 Install Homebrew with:
@@ -33,29 +29,28 @@ Open Terminal Settings and change default shell to `/bin/bash`.
 Install all packages in [`Brewfile`](Brewfile) with:
 
     brew update
-    brew tap Homebrew/bundle
     brew bundle
 
-Includes Ruby and Python package managers (`gem` and `pip`).
+Includes Ruby and Python package managers (`gem` and `pip`) and a number of GUI applications.
 
 ### Setup Python environment
 
     brew link python@3.9
-    ln -s -f /opt/homebrew/opt/python@3.9/bin/python3.9 /opt/homebrew/opt/python@3.9/bin/python
-    ln -s -f /opt/homebrew/opt/python@3.9/bin/python3.9 /opt/homebrew/opt/python@3.9/bin/python3
-    ln -s -f /opt/homebrew/opt/python@3.9/bin/pip3.9 /opt/homebrew/opt/python@3.9/bin/pip
-    ln -s -f /opt/homebrew/opt/python@3.9/bin/pip3.9 /opt/homebrew/opt/python@3.9/bin/pip3
-    pip3 install -r requirements.txt
+    ln -s -f /opt/homebrew/opt/python@3.9/bin/python3.9 /opt/homebrew/bin/python
+    ln -s -f /opt/homebrew/opt/python@3.9/bin/python3.9 /opt/homebrew/bin/python3
+    ln -s -f /opt/homebrew/opt/python@3.9/bin/pip3.9 /opt/homebrew/bin/pip
+    ln -s -f /opt/homebrew/opt/python@3.9/bin/pip3.9 /opt/homebrew/bin/pip3
+    pip3 install --break-system-packages -r requirements.txt
 
 ### Setup Ruby environment
 
     rbenv install 2.7.6
     rbenv global 2.7.6
-    gem install bundler
+    gem install bundler -v 2.4.22
 
 ### Setup Java environment
 
-Setup symlink (as suggested by brew install)
+Setup symlink
 
     sudo ln -sfn /opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
 
@@ -74,18 +69,13 @@ Set OS X defaults with computer name of `Name`:
 ## Install remaining applications
 
 Sign into Mac App Store and install:
- - 1Password
  - Bear
- - Microsoft Word
- - Microsoft Excel
 
-Licenses for Office are through fredhutch.org account (next time move these to brew install).
+Licenses for Office are through fredhutch.org account.
 
-Download and install Kaleidoscope 2.4.5 from https://cloud.kaleidoscope.app/download/v2. Download and install Mathematica 12.3.1 from https://user.wolfram.com/.
+Download and install Mathematica 12.3.1 from https://account.wolfram.com/.
 
-Install chromium and decktape via
-
-    brew install chromium --no-quarantine
+Install decktape via
     npm install -g decktape
 
 ## Install remaining Nextstrain components
@@ -98,26 +88,8 @@ Install auspice
 
     npm install --global auspice
 
-Install iqtree2
-
-    curl -fsSL "https://github.com/iqtree/iqtree2/releases/latest/download/iqtree-2.2.2.6-MacOSX.zip" -o "iqtree.zip"
-    unzip iqtree.zip && rm iqtree.zip
-    sudo mv iqtree-2.2.2.6-MacOSX/bin/iqtree2 /usr/local/bin/
-    rm -r iqtree-2.2.2.6-MacOSX/
-
-Install nextalign
-
-    curl -fsSL "https://github.com/nextstrain/nextclade/releases/latest/download/nextalign-aarch64-apple-darwin" -o "nextalign"
-    chmod +x nextalign
-    sudo mv nextalign /usr/local/bin/
-
 Install nextclade
 
     curl -fsSL "https://github.com/nextstrain/nextclade/releases/latest/download/nextclade-aarch64-apple-darwin" -o "nextclade"
     chmod +x nextclade
     sudo mv nextclade /usr/local/bin/
-
-Install tsv-utils
-
-    curl -L https://github.com/eBay/tsv-utils/releases/download/v2.2.1/tsv-utils-v2.2.1_osx-x86_64_ldc2.tar.gz | tar xz
-    sudo mv tsv-utils-v2.2.1_osx-x86_64_ldc2/bin/* /usr/local/bin/       

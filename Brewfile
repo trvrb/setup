@@ -1,22 +1,25 @@
 # Tap useful formulae
-tap 'homebrew/cask'
-tap 'homebrew/cask-fonts'
 tap 'brewsci/bio'
 tap 'heroku/brew'
 
 # Install GUI apps
-cask 'atom'
+# cask 'atom' // No available formula with the name "atom"
+cask '1password'
 cask 'bbedit'
-cask 'docker'
+cask 'chromium'
+cask 'docker-desktop'
 cask 'dropbox'
 cask 'fantastical'
 cask 'figtree'
 cask 'gitkraken'
 cask 'google-chrome'
+cask 'kaleidoscope@2'
 cask 'launchbar'
+cask 'microsoft-excel'
 cask 'microsoft-teams'
+cask 'microsoft-word'
+cask 'signal'
 cask 'sketch'
-cask 'skype'
 cask 'slack'
 cask 'transmit'
 cask 'vlc'
@@ -29,7 +32,7 @@ brew 'ruby-build'
 
 # Install python formulae
 brew 'gcc'
-brew 'python'
+brew 'python@3.9'
 brew 'zmq'
 brew 'cython'
 brew 'numpy'
@@ -44,7 +47,8 @@ brew 'openjdk@11'
 # Install science formulae
 brew 'mafft'
 brew 'fasttree'
-# brew 'iqtree2' // M1 not supported
+brew 'iqtree2'
+brew 'iqtree3'
 
 # Install latex formulae
 cask 'mactex'
@@ -55,3 +59,5 @@ brew 'awscli'
 brew 'git-lfs'
 brew 'heroku'
 brew 'rethinkdb'
+brew 'rothgar/tap/tsv-utils'
+
