@@ -34,19 +34,22 @@ function set_dock_apps () {
     -array-add "$APP_HEAD/Applications/Slack.app/$APP_TAIL"
 
     $DEF_W $DOCK 'persistent-apps' \
+    -array-add "$APP_HEAD/Applications/Bear.app/$APP_TAIL"
+
+    $DEF_W $DOCK 'persistent-apps' \
     -array-add "$APP_HEAD/System/Applications/Mail.app/$APP_TAIL"
 
     $DEF_W $DOCK 'persistent-apps' \
-    -array-add "$APP_HEAD/Applications/Atom.app/$APP_TAIL"
+    -array-add "$APP_HEAD/Applications/Zed.app/$APP_TAIL"
 
     $DEF_W $DOCK 'persistent-apps' \
     -array-add "$APP_HEAD/Applications/BBEdit.app/$APP_TAIL"
-    
+
     $DEF_W $DOCK 'persistent-apps' \
-    -array-add "$APP_HEAD/Applications/GitKraken.app/$APP_TAIL" 
-           
+    -array-add "$APP_HEAD/Applications/GitKraken.app/$APP_TAIL"
+
     $DEF_W $DOCK 'persistent-apps' \
-    -array-add "$APP_HEAD/Applications/Fantastical.app/$APP_TAIL" 
+    -array-add "$APP_HEAD/Applications/Fantastical.app/$APP_TAIL"
 
     $DEF_W $DOCK 'persistent-apps' \
     -array-add "$APP_HEAD/System/Applications/Utilities/Terminal.app/$APP_TAIL"
