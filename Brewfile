@@ -3,10 +3,10 @@ tap 'brewsci/bio'
 tap 'heroku/brew'
 
 # Install GUI apps
-# cask 'atom' // No available formula with the name "atom"
 cask '1password'
 cask 'bbedit'
 cask 'chromium'
+cask 'claude-code'
 cask 'docker-desktop'
 cask 'dropbox'
 cask 'fantastical'
@@ -23,6 +23,7 @@ cask 'sketch'
 cask 'slack'
 cask 'transmit'
 cask 'vlc'
+cask 'zed'
 cask 'zoom'
 
 # Install ruby formulae
@@ -60,4 +61,3 @@ brew 'git-lfs'
 brew 'heroku'
 brew 'rethinkdb'
 brew 'rothgar/tap/tsv-utils'
-
