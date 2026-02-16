@@ -93,3 +93,7 @@ Install nextclade
     curl -fsSL "https://github.com/nextstrain/nextclade/releases/latest/download/nextclade-aarch64-apple-darwin" -o "nextclade"
     chmod +x nextclade
     sudo mv nextclade /usr/local/bin/
+
+## Copy fonts
+
+Copy over fonts in `~/Library/Fonts/` to new computer. This includes Garamond Premier Pro and Lato.
