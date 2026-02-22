@@ -81,3 +81,6 @@ alias badge="tput bel"
 
 # Alias GCC
 alias gcc="/usr/local/bin/gcc-6"
+
+# Alias Typora
+alias typora="open -a typora"
