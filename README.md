@@ -35,12 +35,16 @@ Includes Ruby and Python package managers (`gem` and `pip`) and a number of GUI 
 
 ### Setup Python environment
 
-    brew link python@3.11
-    ln -s -f /opt/homebrew/opt/python@3.11/bin/python3.11 /opt/homebrew/bin/python
-    ln -s -f /opt/homebrew/opt/python@3.11/bin/python3.11 /opt/homebrew/bin/python3
-    ln -s -f /opt/homebrew/opt/python@3.11/bin/pip3.11 /opt/homebrew/bin/pip
-    ln -s -f /opt/homebrew/opt/python@3.11/bin/pip3.11 /opt/homebrew/bin/pip3
+    brew link python@3.12
+    ln -s -f /opt/homebrew/opt/python@3.12/bin/python3.12 /opt/homebrew/bin/python
+    ln -s -f /opt/homebrew/opt/python@3.12/bin/python3.12 /opt/homebrew/bin/python3
+    ln -s -f /opt/homebrew/opt/python@3.12/bin/pip3.12 /opt/homebrew/bin/pip
+    ln -s -f /opt/homebrew/opt/python@3.12/bin/pip3.12 /opt/homebrew/bin/pip3
     pip3 install --break-system-packages -r requirements.txt
+
+If `pip` fails with a `pyexpat` / `libexpat` symbol error (e.g. `Symbol not found: _XML_SetAllocTrackerActivationThreshold`), the Homebrew bottle was built against a newer system `libexpat` than yours. Rebuild Python from source:
+
+    brew reinstall --build-from-source python@3.12
 
 ### Setup Ruby environment
 

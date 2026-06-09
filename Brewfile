@@ -35,7 +35,7 @@ brew 'ruby-build'
 
 # Install python formulae
 brew 'gcc'
-brew 'python@3.11'
+brew 'python@3.12'
 brew 'zmq'
 brew 'cython'
 brew 'numpy'
